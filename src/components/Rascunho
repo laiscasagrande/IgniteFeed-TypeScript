@@ -1,0 +1,27 @@
+Tipagem dinâmica e estática:
+ -No javaScript, podemos alterar o valor de uma vriável a qualquer momento, por exemplo:
+ - const name = 'Diego'
+ - name = 3
+ - Isso é bom, porque traz dinamismo. Antes uma coisa era uma string e agora eu jogo um número no lugar. Mas é ruim porque abre portas para cometermos muitos erros na aplicação
+- Além do typeScript ajudar a não cometer erros, principalmente em relação ao tipo das variáveis, ele ajuda muito no desenvolvimento da aplicação, porque ele traz inteligência ao nosso editor de código, ou seja, por exemplo, se você der um ctrl espaço em um objeto que falta alguma propriedade, o typeScript mostrará a você o que falta
+
+
+-Mas, no typeScript, eu não preciso tipar tudo, pois ele tem um funcionamento interno chamado inferência de tipos. 
+-Por exemplo, se você criar uma função, não precisa tipar ela. Ao olhar para o código, o typeScript já identifica que aquela função retorna um número, por exemplo. Mas, se ele não entender automaticamente a tipagem, ele te avisará.
+
+-Mas, qual é a importância do typeScript? Porque, por mais que no javaScript podemos mudar a tipagem de uma variável a qualquer momento, uma hora ele dará erro, só que ele mostrará para você depois de rodar a aplicação. O typeScript já avisa que dará erro antes, além de ganhar inteligência no editor, pois ele mostr no ctrl espaço o que está acontecendo e o que falta
+-Se você passar uma string em uma variável que recebe número, o javaScript só vai te mostrar quando a aplicação rodar, mas o typeScript mostrará na hora para você que aquilo está errado.
+- TypeScript te avisa dos erros antes de acontecerem, coisa que o javaScript só avisaria depois.
+- Um exemplo prático, imagine que temos uma interface com as propriedades nome, idade e bio. Queremos trazer estas informações em algum lugar na nossa aplicação. Se passarmos só nome, o javaScript informará erro, mas até você descobrir, perderá muito tempo. O typeScript te avisará na hora que algo está errado e ainda mostraria no ctrl espaço o que está faltando, que nesse caso é idade e bio.
+
+-Escrever um código em javaScript sem typeScript é como entregar uma história sem rascunho, no futuro você o tanto de erros. 
+-Agora, se usar o typeScript, você fará primeiro um rascunho, o que te evitará problemas futuramente.
+
+Funcionalidades do typeScript:
+-Ele revisa seu código antes de rodá-lo, evitando problemas para você futuramente.
+-O seu editor de código fornece autocompletar e sugestões inteligentes, te ajudando a enteder o que está acontecendo e a lembrar nome de variáveis e funções.
+-Ele permite que você veja quais tipos de dados são esperados e retornados pelas funções.
+-Se você precisar mudar alguma coisa no seu código, o typeScript garante que você não vai quebrar outras partes do sistema. Se der algum conflito, ele te avisará.
+
+Resumindo, o typeScript é importante porque te ajuda a encontrar erros no código antes de você rodá-lo, oferece sugestões enquanto você digita, facilita a manutenção do código e garante que mudanças não quebrem outras partes do sistema.
+Antes que dê pane no sistema inteiro e você não se achar mais, o typeScript te alertará antes que isso aconteça.
